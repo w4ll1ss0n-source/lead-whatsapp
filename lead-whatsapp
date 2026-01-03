@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecionando para o WhatsApp</title>
+
+  <script>
+    const numeros = [
+      "16996041623", // Vendedor 1
+      "16994366003"  // Vendedor 2
+    ];
+
+    const indice = Math.floor(Math.random() * numeros.length);
+    const telefone = numeros[indice];
+
+    const url = "https://wa.me/" + telefone + "?text=Olá,%20vim%20pelo%20Google%20e%20gostaria%20de%20atendimento.";
+
+    window.location.href = url;
+  </script>
+</head>
+
+<body>
+  <p>Redirecionando para o WhatsApp…</p>
+  <p>Se não abrir automaticamente, <a id="link" href="#">clique aqui</a>.</p>
+</body>
+</html>
